@@ -1,0 +1,12 @@
+GET http://localhost:7070/customers/test
+
+###
+POST http://localhost:8081/realms/software/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+response_type = code&grant_type=client_credentials&client_id=backend&client_secret=Dk153Lte17SWlXGDHNFbSUY0v0WVYtvj
+
+> {%
+  client.global.set("auth-token", "Bearer " + response.body["access-token"]);
+  client.log(client.global.get("auth-token"));
+ %}
