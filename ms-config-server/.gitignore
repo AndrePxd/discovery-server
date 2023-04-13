@@ -13,8 +13,8 @@ target/
 .springBeans
 .sts4-cache
 
-.key
-.keypub
+key
+key.pub
 
 ### IntelliJ IDEA ###
 .idea
