@@ -13,6 +13,9 @@ target/
 .springBeans
 .sts4-cache
 
+.key
+.keypub
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -31,5 +34,4 @@ build/
 
 ### VS Code ###
 .vscode/
-.key
-.keypub
+
